@@ -9,4 +9,8 @@
 3\. Installed pandas, numpy, matplotlib, scikit-learn and jupyter
 
 4\. Ran test.py successfully
-
+## Project Structure
+data/
+src/
+models/
+notebooks/

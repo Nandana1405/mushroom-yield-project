@@ -37,3 +37,12 @@ data/
 src/
 models/
 notebooks/
+## Column Definitions
+
+| Column | Definition | Unit |
+|----------|------------|------|
+| timestamp | Date and time when sensor data was recorded | Date/Time |
+| temperature_c | Temperature inside the polyhouse | °C |
+| humidity_pct | Relative humidity inside the polyhouse | % |
+| co2_ppm | Carbon dioxide concentration | ppm |
+| yield_kg | Mushroom yield harvested | kg |

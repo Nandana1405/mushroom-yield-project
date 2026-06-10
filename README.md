@@ -50,3 +50,17 @@ notebooks/
 
 * data/interim/02_cleaned.parquet
 * docs/cleaning_log.md
+
+Feature Definitions
+
+temperature_c:
+Temperature sensor reading in °C
+
+humidity_pct:
+Humidity sensor reading in %
+
+co2_ppm:
+CO₂ concentration in ppm
+
+temp_humid_interaction:
+temperature_c × humidity_pct / 100

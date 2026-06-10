@@ -64,3 +64,11 @@ CO₂ concentration in ppm
 
 temp_humid_interaction:
 temperature_c × humidity_pct / 100
+Train/Test Split
+
+Dataset sorted by timestamp.
+80% used for training.
+20% used for testing.
+
+Training data was used to fit MinMaxScaler.
+Testing data was transformed using the same scaler to avoid data leakage.

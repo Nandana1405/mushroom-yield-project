@@ -97,3 +97,16 @@ Positive value means higher humidity increases yield.
 
 CO2 coefficient:
 Negative value means higher CO2 decreases yield.
+
+## Residual Analysis
+
+Diagnostic plots generated:
+
+- residual_vs_predicted.png
+- residual_vs_humidity.png
+
+Observations:
+
+- Residuals are centered around zero.
+- No strong systematic pattern observed.
+- Linear Regression is acceptable as a baseline model.

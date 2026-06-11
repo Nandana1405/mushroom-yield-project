@@ -85,3 +85,15 @@ Train Dates:
 
 Test Dates:
 2024-10-20 to 2024-12-31
+
+
+## Linear Regression Interpretation
+
+Temperature coefficient:
+Positive value means higher temperature increases yield.
+
+Humidity coefficient:
+Positive value means higher humidity increases yield.
+
+CO2 coefficient:
+Negative value means higher CO2 decreases yield.

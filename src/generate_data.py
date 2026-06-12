@@ -17,3 +17,9 @@ df = pd.DataFrame({
     "yield_kg": yield_kg.round(2),
 })
 df.to_csv("data/raw/polyhouse_sensors.csv", index=False)
+
+df = pd.read_csv("data/raw/polyhouse_sensors.csv")
+
+print(df.shape)
+print(df.dtypes)
+print(df.head())

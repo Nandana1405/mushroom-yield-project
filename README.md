@@ -125,3 +125,27 @@ Outputs:
 - reports/random_forest_report.md
 - reports/cv_results.md
 - reports/figures/rf_importance.png
+
+## Model Comparison
+Model	Test MAE	Test R²
+Linear Regression	1.8	0.55
+Random Forest (Default)	1.4	0.68
+Random Forest (Tuned)	1.2	0.74
+
+The Tuned Random Forest achieved the lowest MAE and highest R² score, indicating superior predictive performance.
+
+Outputs:
+-models/rf_tuned.joblib
+-models/champion.joblib
+-models/rf_best_params.json
+-reports/grid_search_results.md
+-reports/model_comparison.md
+-src/grid_search.py
+-src/model_comparison.py
+
+## Run Inference
+
+Predict mushroom yield:
+
+```bash
+python src/predict.py

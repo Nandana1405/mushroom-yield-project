@@ -149,3 +149,19 @@ Predict mushroom yield:
 
 ```bash
 python src/predict.py
+
+## Streamlit App
+
+A simple Streamlit web application was created to predict mushroom yield from sensor inputs.
+
+Inputs:
+- Temperature
+- Humidity
+- CO₂
+
+Output:
+- Predicted Mushroom Yield (kg)
+
+Run:
+
+streamlit run app.py

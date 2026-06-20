@@ -4,16 +4,22 @@ import streamlit as st
 
 @st.cache_resource
 def load_model():
-    return joblib.load("models/champion.joblib")
+    model = joblib.load("models/random_forest.joblib")
+    scaler = joblib.load("models/minmax_scaler_train.joblib")
+    return model, scaler
 
-model = load_model()
+model, scaler = load_model()
 
 def predict_yield(temp, humid, co2):
+
     X = pd.DataFrame({
-        "temperature_c_scaled": [temp],
-        "humidity_pct_scaled": [humid],
-        "co2_ppm_scaled": [co2]
+        "temperature_c": [temp],
+        "humidity_pct": [humid],
+        "co2_ppm": [co2]
     })
 
-    prediction = model.predict(X)
-    return prediction[0]
+    X_scaled = scaler.transform(X)
+
+    prediction = model.predict(X_scaled)
+
+    return float(prediction[0])

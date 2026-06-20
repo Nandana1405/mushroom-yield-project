@@ -10,9 +10,9 @@ df = pd.read_parquet("data/processed/features.parquet")
 
 
 feature_cols = [
-    "temperature_c_scaled",
-    "humidity_pct_scaled",
-    "co2_ppm_scaled",
+    "temperature_c",
+    "humidity_pct",
+    "co2_ppm",
     
 ]
 
